@@ -24,6 +24,10 @@ class Phockup < Formula
 
     prefix.install Dir["*"]
     bin.install_symlink prefix/"phockup.py" => "phockup"
+
+    inreplace prefix/"phockup.py",
+    "#!/usr/bin/env python3",
+    "#!#{prefix}/libexec/bin/python3"
   end
 
   test do
