@@ -1,17 +1,9 @@
-# Homebrew contrib
+# Homebrew contrib (Patched Fork)
 
-Additional formulas for macOS package manager [Homebrew](https://brew.sh)
+Custom Homebrew tap for [Phockup](https://github.com/ivandokov/phockup), patched to fix the broken `tqdm` module dependency issue ([#227](https://github.com/ivandokov/phockup/issues/227)) on macOS.
 
 ## Installation
 
-```
-brew tap ivandokov/homebrew-contrib
-```
-
-## Development
-
-```shell
-pip3 install -r requirements.txt
-```
-
-Run `./deps.py` to get the required resources for `Formula/phockup.rb`.
+```bash
+brew tap Pabloks-png/homebrew-contrib
+brew install phockup
